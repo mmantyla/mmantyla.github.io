@@ -1,0 +1,282 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office"><HEAD><TITLE>Profanity in SE</TITLE>
+<META content="text/html; charset=windows-1252" http-equiv=Content-Type><!-- base href="http://www.soberit.hut.fi/mmantyla/" --><LINK 
+rel=STYLESHEET type=text/css href="/styles/sober.css"><LINK rel=STYLESHEET 
+type=text/css href="mika.css"><!-- base -->
+<META name=GENERATOR content="MSHTML 8.00.6001.18876">
+<style type="text/css">
+.style1 {
+	font-weight: normal;
+}
+</style>
+</HEAD>
+<BODY>
+<H1><span lang="en-us"> <BR></span>The Most Popular Swear Words in Software 
+Engineering </H1>
+
+
+<ol>
+
+	<h4>Abstract</h4>
+	<P>Software engineers are polite and respectful especially towards females 
+	and sexual minorities. Due to the limited use of curse words in software 
+	engineering, their use in sentiment or emotion detection has limited 
+	applicability. However, such behavior also suggests that dating a software 
+	engineer might be a good idea :)
+	<h4>Introduction</h4>
+	<P>A recent study listed the top 15 curse words used in 
+	Facebook [<a href="http://www.slate.com/blogs/lexicon_valley/2013/09/11/top_swear_words_most_popular_curse_words_on_facebook.html">1</a>] 
+	and another study listed the top 9 used in Twitter [<a href="http://newmediarockstars.com/2014/02/fck-that-the-nine-most-popular-swear-words-on-twitter/">2</a>]. 
+	Here we study the top profanities in software engineering (SE) and reflect the 
+	differences to Facebook and Twitter.<h5>Data</h5>
+	<P>I used data set by Ortu et al. [<a href="http://dl.acm.org/citation.cfm?id=2810147">3</a>] 
+	which contains roughly 700,000 Jira issue reports, 2 million comments from 
+	one thousand projects. Altogether the total number of words in the data is 
+	220,931,713 with 2,377,708 unique words. Some notable projects in the data set are for example Hadoop, and 
+	Cassandra.<h4>Results</h4>
+	<P>The table below shows the most popular curse words using the top 15 curse 
+	words of Facebook and the top 9 curse words of Twitter as our lexicon. 
+	We see that the total number of curse words used is very low. In total, the 
+	top curse words are used only 2,824 times which means that 
+	the proportion of curse words is only 0.0013% of the text in total<P>We can 
+	learn that the top five curse words are&nbsp;&quot;hell&quot;, &quot;damn&quot;, &quot;crap&quot;, &quot;ass&quot;, and 
+	&quot;shit&quot;. This means that software engineers are using the nicer curse words 
+	if we compare it with the Facebook and Twitter users who have higher 
+	preference for the F-word. There is also respect towards the sexual 
+	minorities as &quot;fag&quot; is mentioned only four times. Insults towards women are 
+	also quite limited, &quot;bitch&quot; is mentioned 72 times,&quot;whore&quot; 4 times and 
+	finally &quot;slut&quot; is not mentioned at all<P>
+	<table style="width: 57%">
+		<tr>
+			<td style="width: 62px"><strong>Rank in SE</strong></td>
+			<td style="width: 61px"><strong>Word</strong></td>
+			<td style="width: 81px"><strong>Count in SE</strong></td>
+			<td><strong>Rank: Count in Facebook</strong></td>
+			<td><strong>Rank: Share in Twitter</strong></td>
+		</tr>
+		<tr>
+			<td style="width: 62px"><strong>1</strong></td>
+			<td style="width: 61px">hell</td>
+			<td style="width: 81px">779</td>
+			<td>NA</td>
+			<td>5: 4.5%</td>
+		</tr>
+		<tr>
+			<td style="width: 62px">2</td>
+			<td style="width: 61px">damn</td>
+			<td style="width: 81px">621</td>
+			<td>3: 6.3 million</td>
+			<td>NA</td>
+		</tr>
+		<tr>
+			<td style="width: 62px">3</td>
+			<td style="width: 61px">crap</td>
+			<td style="width: 81px">598</td>
+			<td>5: 2 million</td>
+			<td>NA</td>
+		</tr>
+		<tr>
+			<td style="width: 62px">4</td>
+			<td style="width: 61px">ass</td>
+			<td style="width: 81px">249</td>
+			<td>NA</td>
+			<td>3: 14.5%</td>
+		</tr>
+		<tr>
+			<td style="width: 62px">5</td>
+			<td style="width: 61px">shit</td>
+			<td style="width: 81px">225</td>
+			<td><strong>1</strong>: 10.5 million</td>
+			<td>2: 15%</td>
+		</tr>
+		<tr>
+			<td style="width: 62px">6</td>
+			<td style="width: 61px">darn</td>
+			<td style="width: 81px">220</td>
+			<td>8: ?</td>
+			<td>NA</td>
+		</tr>
+		<tr>
+			<td style="width: 62px">7</td>
+			<td style="width: 61px">dick*</td>
+			<td style="width: 81px">198</td>
+			<td>7: ?</td>
+			<td>7: 1.8%</td>
+		</tr>
+		<tr>
+			<td style="width: 62px">8</td>
+			<td style="width: 61px">bitch</td>
+			<td style="width: 81px">72</td>
+			<td>4: 4.5 million</td>
+			<td>4: 10.3%</td>
+		</tr>
+		<tr>
+			<td style="width: 62px">9</td>
+			<td style="width: 61px">fuck</td>
+			<td style="width: 81px">35</td>
+			<td>2: 9.5 million</td>
+			<td><strong>1</strong>: 34.7%</td>
+		</tr>
+		<tr>
+			<td style="width: 62px">10</td>
+			<td style="width: 61px">piss</td>
+			<td style="width: 81px">31</td>
+			<td>6: ?</td>
+			<td>8: 1.5%</td>
+		</tr>
+		<tr>
+			<td style="width: 62px">11</td>
+			<td style="width: 61px">bastard</td>
+			<td style="width: 81px">21</td>
+			<td>13: ?</td>
+			<td>NA</td>
+		</tr>
+		<tr>
+			<td style="width: 62px">12</td>
+			<td style="width: 61px">asshole</td>
+			<td style="width: 81px">8</td>
+			<td>11: ?</td>
+			<td>NA</td>
+		</tr>
+		<tr>
+			<td style="width: 62px">13</td>
+			<td style="width: 61px">cock</td>
+			<td style="width: 81px">6</td>
+			<td>9: ?</td>
+			<td>NA</td>
+		</tr>
+		<tr>
+			<td style="width: 62px">14</td>
+			<td style="width: 61px">pussy</td>
+			<td style="width: 81px">4</td>
+			<td>10: ?</td>
+			<td>9: 1.2%</td>
+		</tr>
+		<tr>
+			<td style="width: 62px">15</td>
+			<td style="width: 61px">fag</td>
+			<td style="width: 81px">4</td>
+			<td>12: ?</td>
+			<td>NA</td>
+		</tr>
+		<tr>
+			<td style="width: 62px">16</td>
+			<td style="width: 61px">whore</td>
+			<td style="width: 81px">4</td>
+			<td>NA</td>
+			<td>6: 1.8%</td>
+		</tr>
+		<tr>
+			<td style="width: 62px; height: 20px;">17</td>
+			<td style="width: 61px; height: 20px;">douche</td>
+			<td style="height: 20px; width: 81px">1</td>
+			<td style="height: 20px">15: 54,000</td>
+			<td style="height: 20px">NA</td>
+		</tr>
+		<tr>
+			<td style="width: 62px">18</td>
+			<td style="width: 61px">slut</td>
+			<td style="width: 81px">0</td>
+			<td>14: ?</td>
+			<td>NA</td>
+		</tr>
+	</table>
+	<P>*Further analysis reveals that &quot;dick&quot; is used often as a name, e.g. &quot;Dick 
+	Wilson&quot; and not as a profanity.&nbsp;
+	<P>I was also curious to know what words have semantic similarities to the 
+	top five curse words. Such an analysis could reveal additional curse words 
+	for example.&nbsp;Thus, I computed a vector representation for words 
+	using GloVe [<a href="http://nlp.stanford.edu/projects/glove/">4</a>] with R 
+	package implemented by Selivanov [<a href="https://cran.r-project.org/web/packages/text2vec/vignettes/glove.html">5</a>].
+	<P>The most similarly used words for top 5 curse words are presented in 
+	below and it reveals no additional curse words. Rather it shows the polite 
+	use of language with terms like &quot;heck&quot;, &quot;hassle&quot; &quot;whoops&quot;, &quot;pain&quot;, 
+	&quot;hurdle&quot;, &quot;stupid&quot;, 
+	and &quot;hairy&quot;.<P>&nbsp;<table style="width: 57%">
+		<tr>
+			<td style="width: 165px; height: 27px">&nbsp;</td>
+			<td style="width: 234px; height: 27px">&nbsp;</td>
+			<td colspan="5" style="height: 27px"><strong>Most similar words</strong></td>
+		</tr>
+		<tr>
+			<td style="width: 165px; height: 27px"><strong>Rank in SE </strong>
+			</td>
+			<td style="width: 234px; height: 27px"><strong>Word</strong></td>
+			<td style="height: 27px">1</td>
+			<td style="height: 27px">2</td>
+			<td style="height: 27px">3</td>
+			<td style="height: 27px">4</td>
+			<td style="height: 27px; width: 81px;">5</td>
+		</tr>
+		<tr>
+			<td style="width: 165px">1</td>
+			<td style="width: 234px">hell</td>
+			<td>loose </td>
+			<td>heck </td>
+			<td>hassle </td>
+			<td>nightmare </td>
+			<td style="width: 81px">pain</td>
+		</tr>
+		<tr>
+			<td style="width: 165px">2</td>
+			<td style="width: 234px">damn</td>
+			<td>kinda </td>
+			<td>darn </td>
+			<td>ah</td>
+			<td>oh</td>
+			<td style="width: 81px">cool</td>
+		</tr>
+		<tr>
+			<td style="width: 165px">3</td>
+			<td style="width: 234px">crap</td>
+			<td>oh </td>
+			<td>ton </td>
+			<td>whoops </td>
+			<td>totally </td>
+			<td style="width: 81px">oops</td>
+		</tr>
+		<tr>
+			<td style="width: 165px">4</td>
+			<td style="width: 234px">ass</td>
+			<td>pain&nbsp;&nbsp;&nbsp;&nbsp; </td>
+			<td>butt</td>
+			<td>kicks</td>
+			<td>hurdle</td>
+			<td style="width: 81px">neck</td>
+		</tr>
+		<tr>
+			<td style="width: 165px">5</td>
+			<td style="width: 234px">shit</td>
+			<td>crazy </td>
+			<td>spew </td>
+			<td>complications </td>
+			<td>tons </td>
+			<td style="width: 81px">ouch</td>
+		</tr>
+		</table>
+	<h5>&nbsp;</h5>
+	<p>&nbsp;</p>
+	<p>&nbsp;</p>
+	<P><a href="http://mikamantyla.eu/">back to main-page</a></ol>
+</body>
+
+<!-- Start of StatCounter Code for Default Guide -->
+<script type="text/javascript">
+var sc_project=11133902; 
+var sc_invisible=1; 
+var sc_security="55600490"; 
+var scJsHost = (("https:" == document.location.protocol) ?
+"https://secure." : "http://www.");
+document.write("<sc"+"ript type='text/javascript' src='" +
+scJsHost+
+"statcounter.com/counter/counter.js'></"+"script>");
+</script>
+<noscript><div class="statcounter"><a title="web counter"
+href="http://statcounter.com/free-hit-counter/"
+target="_blank"><img class="statcounter"
+src="//c.statcounter.com/11133902/0/55600490/1/" alt="web
+counter"></a></div></noscript>
+<!-- End of StatCounter Code for Default Guide -->
+
+
+</html>

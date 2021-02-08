@@ -1,0 +1,208 @@
+<!-- saved from url=(0022)http://internet.e-mail -->
+<html xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+
+<head>
+<meta http-equiv="Content-Language" content="en-us">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<link type="text/css" href="sober_mika.css" rel="STYLESHEET">
+<title>Bad code smells - A Taxonomy</title>
+</head>
+
+<body>
+
+<h1>A Taxonomy for &quot;Bad Code Smells&quot; </h1>
+<h3>Citation</h3>
+<p>If you wish to cite this taxonomy please use the following article</p>
+<p>Mäntylä, M. V. and Lassenius, C. <b>&quot;Subjective Evaluation of Software 
+Evolvability Using Code Smells: An Empirical Study&quot;</b>. Journal of Empirical 
+Software Engineering, vol. 11, no. 3, 2006, pp. 395-431. (<a target="_top" href="http://www.soberit.hut.fi/~mmantyla/ESE_2006.pdf">pdf</a>)</p>
+<h3>Taxonomy</h3>
+<p>The reason for creating the taxonomy is to provide better understanding of 
+the smells and to recognize the relationships between smells. I feel that with a 
+long flat list of the code smells it is easy to lose the overall picture (at least that 
+happened to me when I first studied the list of code smells in (Fowler&amp;Beck 
+2000)). Thus, here is a taxonomy of five groups.</p>
+<table border="1" width="100%" id="table1">
+	<tr>
+		<td>
+		<h3>Group name</h3>
+		</td>
+		<td>
+		<h3>Smells in group</h3>
+		</td>
+		<td width="898">
+		<h3>Discussion</h3>
+		</td>
+	</tr>
+	<tr>
+		<td><b>The Bloaters</b></td>
+		<td>-Long Method<br>
+        -Large Class<br>
+        -Primitive Obsession<br>
+        -Long Parameter List<br>
+        -DataClumps</td>
+		<td width="898">
+		Bloater smells represents something that has grown so large that it 
+		cannot be effectively handled.<p>It seems likely that these smells&nbsp;grow 
+		a little bit at a time. Hopefully nobody designs, e.g., 
+		Long Methods.</p>
+		<p>
+		Primitive Obsession is actually more of a symptom that causes bloats 
+		than a bloat itself. The same holds for Data Clumps<i>. </i>When a 
+		Primitive Obsession exists, there are no small classes for small entities 
+		(e.g. phone numbers). Thus, the functionality is added to some 
+		other class, which increases the class and method size in the 
+		software. With Data Clumps there exists a set of primitives that always 
+		appear together (e.g. 3 integers for RGB colors). Since these data items 
+		are not encapsulated in a class this increases the sizes of methods and 
+		classes.&nbsp; </td>
+	</tr>
+	<tr>
+		<td><b>The Object-Orientation Abusers </b></td>
+		<td>-Switch Statements<br>
+		-Temporary Field<br>
+		-Refused Bequest<br>
+		-Alternative 
+		Classes with Different Interfaces</td>
+		<td width="898">
+		The common denominator for the smells in the Object-Orientation Abuser 
+		category is that they represent cases where the solution does not fully 
+		exploit the possibilities of object-oriented design.<p>For example, a Switch Statement might be considered acceptable or even good 
+design in procedural programming, but is something that should be avoided in 
+object-oriented programming. The situation where switch statements or type codes 
+are needed should be handled by creating subclasses. Parallel Inheritance 
+Hierarchies and Refused Bequest smells lack proper inheritance design, which is 
+one of the key elements in object-oriented programming. The Alternative Classes 
+with Different Interfaces smell lacks a common interface for closely related 
+classes, so it can also be considered a certain type of inheritance misuse. The 
+Temporary Field smell means a case in which a variable is in the class scope, when it 
+should be in method scope. This violates the information hiding principle. </td>
+	</tr>
+	<tr>
+		<td><b>The Change Preventers </b></td>
+		<td>-Divergent Change<br>
+		-Shotgun Surgery <br>
+		-Parallel Inheritance 
+		Hierarchies </td>
+		<td width="898">
+		Change Preventers are smells is that hinder changing or further 
+		developing the software<p>These smells violate the rule 
+		suggested by Fowler and Beck which says that classes and possible 
+		changes should have a one-to-one relationship. For example, changes to 
+		the database only affect one class, while changes to calculation 
+		formulas only affect the other class.</p>
+		<p>The Divergent Change smell means that we have a single class that 
+		needs to be modified by many different types of changes. With the Shotgun Surgery 
+		smell the situation is the opposite, we need to modify many classes when 
+		making a single change to a system (change several classes when changing 
+		database from one vendor to another)</p>
+		<p>Parallel 
+		Inheritance Hierarchies, which means a duplicated class hierarchy,
+		was originally placed in OO-abusers. One could also place it 
+		inside of The Dispensables since there is redundant logic that should be 
+		replaced. </td>
+	</tr>
+	<tr>
+		<td><b>The Dispensables</b></td>
+		<td>-Lazy class<br>
+		-Data class <br>
+		-Duplicate Code<br>
+		-Dead Code, <br>
+		-Speculative Generality</td>
+		<td width="898">
+		The common thing for the 
+Dispensable smells is that they all represent something unnecessary that should 
+be removed from the source code.<p>This group contains two types of smells 
+		(dispensable classes and 
+dispensable code), but since they violate the same principle, we will look at 
+them together.&nbsp;If a class is not doing enough it needs to be removed or 
+its responsibility needs to be increased. This is the case with the Lazy class and 
+		the Data class smells. Code that is not used or is redundant needs to be 
+removed. This is the case with Duplicate Code, Speculative Generality and Dead 
+Code smells.&nbsp; </td>
+	</tr>
+	<tr>
+		<td><b>The Couplers</b></td>
+		<td>-Feature Envy<br>
+		-Inappropriate Intimacy<br>
+		-Message Chains <br>
+		-Middle 
+		Man</td>
+		<td width="898">
+		This group has four coupling-related smells. 
+		<p>One design principle that has been around for decades is low coupling 
+		(Stevens et al. 1974) . This group has 3 
+		smells that represent high coupling. Middle Man smell on the other hand 
+		represent a problem that might be created when trying to avoid high 
+		coupling with constant delegation. Middle Man is a class that is doing 
+		too much simple delegation instead of really contributing to the 
+		application. </p>
+		<p>The Feature Envy smell means a case where one method is too 
+		interested in other classes, and the Inappropriate Intimacy smell means 
+		that two classes are coupled tightly to each other. Message Chains is a 
+		smell where class A needs data from class D. To access this data, class 
+		A needs to retrieve object C from object B (A and B have a direct reference). 
+		When class A gets object C it then asks C to get object D. When class A 
+		finally has a reference to class D, A asks D for the data it needs. The 
+		problem here is that A becomes unnecessarily coupled to classes B, C, and D, when it only needs some piece of data from class D. 
+		The following example illustrates the message chain smell: <font face="Courier New" size="2">
+		A.getB().getC().getD().getTheNeededData()</font></p>
+		<p>Of course, I could make an argument that these smells should belong to the 
+Object-Orientation abusers group, but since they all focus strictly on 
+coupling, I think it makes the taxonomy more understandable if they are 
+introduced in a group of their own.</td>
+	</tr>
+</table>
+<h3>FAQ</h3>
+<p><b>In what way is this taxonomy better than the one provided in the 
+Refactoring Workbook (Wake 2003)? </b> <br>
+It is shorter ;-). Seriously, this is left as an exercise for the reader. If you 
+like mine better - great. If you like their better - fine. </p>
+<p><b>Hey, I could argue that all smells should be placed inside a certain group 
+(Change Preventers or OO abusers) since they all prevent change / abuse OO 
+principles. </b><br>
+This is true. However, then we would not receive any increased understanding from the 
+classification. </p>
+<p><b>I want to learn more about refactoring and code smells<br>
+</b>Try (Fowler 2000) or <a target="_top" href="http://www.refactoring.com">www.refactoring.com</a></p>
+<p><b>I need to find a really good agile process framework to help our process 
+improvement!<br>
+</b>Great, try&nbsp;the
+<a target="_top" href="http://www.soberit.hut.fi/sems/SEMS_work_book_2nd_printing_1st_chapter.pdf">
+SEMS-approach</a></p>
+<h3>References</h3>
+<p style="margin-top: 12pt;">M. Fowler, <i style>Refactoring: Improving the 
+Design of Existing Code, </i>Canada: Addison-Wesley, 2000.</p>
+<p style="margin-top: 12pt;">M. Fowler and K. Beck, &quot;Bad Smells in Code,&quot; in
+<i style>Refactoring: Improving the Design of Existing Code, </i>Addison-Wesley, 
+2000, pp. 75-88.</p>
+<p style="margin-top: 12pt;">W. Stevens, G. Myers and L. Constantine, 
+&quot;Structured Design,&quot; <i style>IBM Syst J, </i>vol. 13, no. 2, pp. 115-139, 1974.</p>
+<p style="margin-top: 12pt;">W.C. Wake, <i style>Refactoring Workbook, </i>
+Addison Wesley, 2003.</p>
+<hr>
+<p>comments / feedback: <a target="_top" href="http://mikamantyla.eu/">Mika 
+Mäntylä</a> </p>
+<p>&nbsp;</p>
+
+<!-- Start of StatCounter Code for Default Guide -->
+<script type="text/javascript">
+var sc_project=8854256; 
+var sc_invisible=1; 
+var sc_security="142d6dec"; 
+var scJsHost = (("https:" == document.location.protocol) ?
+"https://secure." : "http://www.");
+document.write("<sc"+"ript type='text/javascript' src='" +
+scJsHost+
+"statcounter.com/counter/counter.js'></"+"script>");
+</script>
+<noscript><div class="statcounter"><a title="web stats"
+href="http://statcounter.com/free-web-stats/"
+target="_blank"><img class="statcounter"
+src="http://c.statcounter.com/8854256/0/142d6dec/1/"
+alt="web stats"></a></div></noscript>
+<!-- End of StatCounter Code for Default Guide -->
+
+</body>
+
+</html>

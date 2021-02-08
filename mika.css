@@ -1,0 +1,136 @@
+﻿BODY {
+	background-color : white;
+	width : 800px;
+	font-family :
+sans-serif, arial, helvetica, helve, sans-serif; 
+	font-size :
+13px;
+	text-align : left;
+}
+
+P {
+	background-color : white;
+	font-family :
+sans-serif, arial, helvetica, helve, sans-serif; 
+	font-size :
+13px;
+	text-align : left;
+}
+
+TD {
+	background-color : white;
+	font-family :
+sans-serif, arial, helvetica, helve, sans-serif; 
+	font-size :
+13px;
+	text-align : left;
+}
+
+TABLE, TD, TH, H1, H2, H3, H4, H5, H6, ADDRESS, DT,
+DD {
+	font-family : sans-serif, arial, helvetica, helve,
+sans-serif;
+	text-align : left;
+}
+H1 {
+	font-size : 24px;
+	font-weight :
+bold;
+	color : #444477;
+}
+H2 {
+	font-size : 18px;
+	font-weight :
+normal;
+}
+H3 {
+	font-size : 15px;
+	font-weight : bold;
+}
+H4 {
+	font-size :
+15px;
+	font-weight : normal;
+}
+H5 {
+	font-size : 13px;
+	font-style :
+italic;
+	font-weight : normal;
+}
+H6 {
+	font-size : 13px;
+	font-style :
+normal;
+	font-weight : normal;
+}
+
+TH { font-size: 13px;
+font-weight : bold;}
+
+CAPTION { font-size: 13px;
+font-weight : bold;}
+
+IMG {
+	padding : 1em;
+}
+.publications P,
+BODY.publications  {
+	font-family : verdana, arial, helvetica, helve,
+sans-serif; 
+	font-size : 13px;
+	text-align : left;
+}
+HR {
+	color :
+black;
+}
+BLOCKQUOTE {
+	font-size : 90%;
+}
+UL {
+	list-style-image :
+url('krasnyi.gif');
+	list-style-type : square
+}
+
+A {
+   font-weight : bold; 
+
+color : #0033cc; 
+   text-decoration : none;
+}
+
+ol, ul {
+	  margin-top: 0px;
+	  margin-bottom: 0px;
+	}
+
+A:visited {
+   color :
+#0033cc; 
+}
+A:hover {
+   text-decoration : underline; 
+}
+A:active {
+
+color : #ff0000; 
+   text-decoration : underline; 
+}
+.notice {
+
+font-weight : bold; 
+   font-size : 18px; 
+   color : red; 
+   text-align:
+left; 
+}
+.footer {
+	font-family : verdana, arial, helvetica, helve,
+sans-serif; 
+	font-size : 10px;
+   font-style : italic; 
+   text-align :
+left;
+}
