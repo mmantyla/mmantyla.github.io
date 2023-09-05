@@ -1,8 +1,14 @@
 ---
-title: "Mini SLR guide for master's thesis"
+title: "Mini Systematic Review Guide for Master’s Thesis"
+---
+Author: Mika Mäntylä <mika.mantyla@helsinki.fi>
+
+Affiliation: University of Helsinki
+
+&copy; 2023 Licensed under [CC BY](https://creativecommons.org/licenses/by/4.0/)
+
 ---
 
-# Systematic Review
 
 This document outlines the steps to conduct a (mini) systematic literature review (SLR) as part of a master's thesis. A full systematic literature review is not undertaken due to its notorious laboriousness. As a result, several steps have been adapted to make the process more manageable.
 
