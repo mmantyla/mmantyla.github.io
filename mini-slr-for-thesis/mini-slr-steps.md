@@ -9,8 +9,7 @@ Affiliation: University of Helsinki
 
 ---
 
-
-This document outlines the steps to conduct a (mini) systematic literature review (SLR) as part of a master's thesis. A full systematic literature review is not undertaken due to its notorious laboriousness. As a result, several steps have been adapted to make the process more manageable.
+This document outlines the steps to conduct a (mini) systematic literature review (SLR) as part of a master's thesis. A full systematic literature review is known for its notorious laboriousness. As a result, several steps have been adapted to make the process more manageable. 
 
 In addition to the mini SLR, you will explore current trends related to your topic, formulate your research questions and method, and assess whether the existing literature provides any datasets or instruments that you could utilize in your master's thesis. A successful master's thesis should also encompass an empirical and/or constructive component.
 
@@ -59,7 +58,7 @@ e. **Research Questions** - Propose an initial research question. (This can also
 
 ### Step 1: Learn About Different Literature Review Methods
 
-Familiarize yourself with various methods for analyzing academic literature by watching these videos. The combined runtime is approximately 35 minutes: [Video Playlist](https://youtube.com/playlist?list=PLTUjKYPvVhe6t9pRm0PQDD6xMxUXjX9vP).
+Familiarize yourself with various methods for analyzing academic literature by watching these videos. The combined runtime is 35 minutes: [Video Playlist](https://youtube.com/playlist?list=PLTUjKYPvVhe6t9pRm0PQDD6xMxUXjX9vP).
 
 ### Step 2: Define Search Terms 
 
@@ -84,7 +83,7 @@ c) the terms are connected with the Boolean operator AND.
 
 ### Step 4: Conduct Initial Searches and Analyze Selected Papers
 
-Review and discuss the top 5 papers as ranked by Google Scholar. Google Scholar ranks papers based on relevance, usually yielding accurate results. While Scopus offers more accurate search string speficition, its relevance-based rankings might not be as effective as those from Google Scholar.
+Study the top 5 papers as ranked by Google Scholar. Google Scholar ranks papers based on relevance, usually yielding accurate results. While Scopus offers more accurate search string speficition, its relevance-based rankings might not be as effective as those from Google Scholar.
 
 Do the paper help you identify new search terms? 
 
@@ -201,14 +200,18 @@ Do the papers utilize any open data sets you could also analyze?
 
 Compose a report with the following sections:
 
-i.) **Final Search String and Number of Papers Found**  
+i.) **Flow diagram of studies found**
+Choose a proper diagram from [Prisma guidelines](https://guides.lib.unc.edu/prisma).
+<!--![Example flow diagram](Prisma_flow.png)  -->
+
+ii.) **Final Search String and Number of Papers Found**  
 Report the assessment outcomes for all papers in a table format, as illustrated below:
 ![Include/Exclude Outcomes Illustration](include_exclude_table.png)
 
-ii.) **Initial Findings**  
+iii.) **Initial Findings**  
 Sketch an initial presentation of your findings. This could be in the form of [mapping](https://www.youtube.com/watch?v=dS6AfLes1GI&t=404s), an [evidence table](https://www.youtube.com/watch?v=dS6AfLes1GI&t=601s), or even a [meta-analysis](https://www.youtube.com/watch?v=dS6AfLes1GI&t=776s).
 
-iii.) **Research Framework**  
+iiii.) **Research Framework**  
 Report any changes made to the research framework, research questions, research methods, and the data or data collection instruments you plan to use or collect.
 
 <!-- TODO: TOOLS for meta-analysis from email -->
@@ -216,7 +219,10 @@ Report any changes made to the research framework, research questions, research 
 
 ## Task 5 - Final mini Systematic Literature Review
 
-### Step 1: Report the high level findings 
+### Step 1: Search and Screening Process
+[Prisma](https://guides.lib.unc.edu/prisma) has good flow diagram template that shows what and how to report the search and screening process.
+
+### Step 2: Report the high level findings 
 This could be in the form of [mapping](https://www.youtube.com/watch?v=dS6AfLes1GI&t=404s), an [evidence table](https://www.youtube.com/watch?v=dS6AfLes1GI&t=601s), or even a [meta-analysis](https://www.youtube.com/watch?v=dS6AfLes1GI&t=776s). The links point to the timestamps in the video where these methods are introduced. Full references for the papers discussed in the videos are listed below:
 
 a) **Mapping**: Engström E, Runeson P. "Software product line testing–a systematic mapping study." Information and Software Technology. 2011 Jan 1;53(1):2-13. [Link to the paper](https://www.sciencedirect.com/science/article/pii/S0950584910001709#f0010)
@@ -225,7 +231,7 @@ b) **Evidence Table**: Kuutila M, Mäntylä M, Farooq U, Claes M. "Time pressure
 
 c) **Meta-analysis**: Hannay JE, Dybå T, Arisholm E, Sjøberg DI. "The effectiveness of pair programming: A meta-analysis." Information and Software Technology. 2009 Jul 1;51(7):1110-22. [Link to the paper](https://www.sciencedirect.com/science/article/pii/S0950584909000123#fig1)
 
-### Step 2: Report More Detailed Findings
+### Step 3: Report More Detailed Findings
 
 - Explain the main figure or table you created in Step 1 in detail.
 
@@ -239,8 +245,8 @@ c) **Meta-analysis**: Hannay JE, Dybå T, Arisholm E, Sjøberg DI. "The effectiv
 
 - Identify and summarize the research gaps. What remains unknown about the topic?
 
-### Step 3: Write a Report
-Include contents of Steps 1 and 2. 
+### Step 4: Write a Report
+Include contents of Steps 1, 2, and 3. 
 
 ## Master's Thesis Considerations
-The reports you've produced in Tasks 1 - 5 should be incorporated into your Master's thesis. However, it's not necessary to include every detail. Consider using a refined version of the reports for your thesis.
+The report contents you've produced in Tasks 1 - 5 should be incorporated into your Master's thesis. However, it is not necessary to include every detail. Consider using a refined version of the reports for your thesis.
